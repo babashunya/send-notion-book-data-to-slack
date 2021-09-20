@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/babashunya/send-notion-book-data-to-slack#readme",
   "dependencies": {
-    "prettier": "^2.4.1"
+    "@notionhq/client": "^0.3.2",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1"
   }
 }
