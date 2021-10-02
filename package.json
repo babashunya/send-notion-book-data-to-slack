@@ -18,7 +18,9 @@
   "homepage": "https://github.com/babashunya/send-notion-book-data-to-slack#readme",
   "dependencies": {
     "@notionhq/client": "^0.3.2",
-    "dotenv": "^10.0.0"
+    "@slack/webhook": "^6.0.0",
+    "dotenv": "^10.0.0",
+    "underscore": "^1.13.1"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
