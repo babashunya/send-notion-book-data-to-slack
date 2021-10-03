@@ -83,12 +83,18 @@ const getFromNotionAPI = async () => {
     }
   }
 
-  await sendSlack(str);
+  return await sendSlack(str);
 };
 
 
 const main = async () => {
-  await getFromNotionAPI();
+  return await getFromNotionAPI();
 };
 
-main();
+exports.handler =  async (event, context, callback) => {
+  await main();
+  await callback(null, {
+    statusCode: 200,
+    body: JSON.stringify('ok!'),
+  });
+}
